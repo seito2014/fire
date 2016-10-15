@@ -1,0 +1,42 @@
+<% include const/_const %>
+<%
+var id = "index";
+var title = "";
+var description = "sample text,sample text";
+var keywords = "word1,word2,word3";
+var type = "blog";
+%>
+<% include metadata/_head %>
+<% include layout/_l-header %>
+
+<!--start l-contents-->
+<div class="l-container u-clear">
+
+    <form class="form" action="#" id="js-input">
+        <h1 class="form-title">Input!</h1>
+        <dl class="form-inputs">
+            <dt class="form-inputs-title">ワード</dt>
+            <dd class="form-inputs-data">
+                <input type="input" value="" placeholder="ex)マイク">
+            </dd>
+            <dt class="form-inputs-title">ライム</dt>
+            <dd class="form-inputs-data">
+                <input type="input" value="" placeholder="ex)maiku">
+            </dd>
+        </dl>
+        <button class="button" type="submit">Submit</button>
+    </form>
+
+    <form class="form" action="#" id="js-search">
+        <h1>Search!</h1>
+        <input type="search" value="" placeholder="input me">
+        <div>
+
+        </div>
+    </form>
+
+</div>
+<!--end l-contents-->
+
+<% include layout/_l-footer %>
+<% include metadata/_script %>
